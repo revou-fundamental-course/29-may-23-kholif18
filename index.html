@@ -5,25 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <nav class="navbar">
-        <img class="nav-logo" src="/img/logo.svg" alt="Logo">
+        <a href="#home" onclick="scrollToSection(event)"><img class="nav-logo" src="img/logo.svg" alt="Logo"></a>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Our Profile</a></li>
+            <li><a href="#home" onclick="scrollToSection(event)">Home</a></li>
+            <li><a href="#our-profil" onclick="scrollToSection(event)">Our Profile</a></li>
             <li><a href="#">Portofolio</a></li>
             <li><a href="#">Message Us</a></li>
         </ul>
     </nav>
-    <div class="content">
-
+    <div class="banner" id="home">
+        <img src="img/banner-1.jpg" alt="banner">
+        <h3 id="welcomeMessage"></h3>
+        <h1>RAVAA Studio</h1>
+        <h4>"Design Excellence, Printed to Perfection"</h4>
+    </div>
+    <div id="our-profil">
+        <div class="header">
+            <h2>WHY RAVAA STUDIO</h2>
+        </div>
+        <div class="why-choose-us">
+            <div class="why-choose-us-item">
+                <h3>Quality Designs</h3>
+                <p>Our team of talented designers is dedicated to delivering high-quality designs that capture your
+                    vision.
+                </p>
+            </div>
+            <div class="why-choose-us-item">
+                <h3>Professional Printing Services</h3>
+                <p>We provide professional printing services that produce outstanding results.</p>
+            </div>
+            <div class="why-choose-us-item">
+                <h3>Timely Delivery</h3>
+                <p>We understand the importance of deadlines. With our efficient processes, we ensure that your projects
+                    are
+                    completed and delivered on time.</p>
+            </div>
+            <div class="why-choose-us-item">
+                <h3>Excellent Customer Service</h3>
+                <p>Your satisfaction is our top priority. We strive to provide excellent customer service and build
+                    long-term relationships with our clients.</p>
+            </div>
+        </div>
     </div>
     <footer></footer>
-    Test
+    <script src="js/main.js"></script>
 </body>
 
 </html>
