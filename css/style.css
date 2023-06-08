@@ -139,13 +139,22 @@ nav.navbar ul li a:hover:after {
     left: 10%;
 }
 
+@media (max-width: 767px){
+    .banner img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 /* Banner End */
 
-
+/* Gaya CSS untuk desktop */
 #our-profil {
+    /* display: flex; */
     background-color: rgb(255, 255, 255);
     max-width: 100%;
-    margin-top: 0;
+    margin: 0 200px 0 200px;
+
 }
 
 #our-profil h2 {
@@ -155,12 +164,24 @@ nav.navbar ul li a:hover:after {
 }
 .why-choose-us {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto auto;
     gap: 25px;
     padding: 25px;
 }
 
+.why-choose-us-item img{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width:80px;
+    height: auto;
+    flex-shrink: 0;
+}
+
 .why-choose-us-item {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 20px;
     background-color: #ffffff;
     padding: 20px;
 }
@@ -175,3 +196,149 @@ nav.navbar ul li a:hover:after {
     font-size: 16px;
     line-height: 1.4;
 }
+
+
+
+/* Gaya CSS untuk ponsel */
+@media (max-width: 767px) {
+    #our-profil {
+        background-color: rgb(255, 255, 255);
+        max-width: 100%;
+    }
+
+    .why-choose-us {
+        display: block;
+        padding: 0;
+    }
+    
+    .why-choose-us-item {
+        background-color: #ffffff;
+        padding: 20px;
+    }
+    
+    .why-choose-us-item h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #cacaca;
+    }
+    
+    .why-choose-us-item p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    
+}
+
+/* pesan */
+.message {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 15px;
+}
+
+.message-form {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0 auto;
+  }
+  
+  .message-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .message-form input,
+  .message-form textarea {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-radius: 7px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid#707070;
+  }
+  
+  input[type="radio"] {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .message-form textarea {
+    height: 150px;
+  }
+  
+  .message-form button {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+  
+  .message-form button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .validation-message {
+    display: block;
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .invalid {
+    border-color: red;
+  }
+  
+
+  
+  /* Footer */
+  .footer {
+    background-color: #3d3d3d;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .footer p {
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .footer-links li a {
+    text-decoration: none;
+    color: #888;
+  }
+  
+  .footer-links li a:hover {
+    color: #333;
+  }
+  
+  .message .result {
+    width: auto;
+    height: auto;
+    border: 1px solid #212529;
+    border-radius: 7px;
+  }

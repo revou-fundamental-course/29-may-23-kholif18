@@ -1,6 +1,6 @@
 // untuk input nama dan di letakkan pada welcome message
 document.addEventListener("DOMContentLoaded", function () {
-    let name = prompt("Silakan masukkan nama Anda:");
+    // let name = prompt("Silakan masukkan nama Anda:");
 
     if (name) {
         //memasukkan nama ke welcome message
